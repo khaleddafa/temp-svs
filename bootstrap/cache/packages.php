@@ -160,13 +160,6 @@
       'Google2FA' => 'PragmaRX\\Google2FALaravel\\Facade',
     ),
   ),
-  'rachidlaasri/laravel-installer' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'RachidLaasri\\LaravelInstaller\\Providers\\LaravelInstallerServiceProvider',
-    ),
-  ),
   'rap2hpoutre/laravel-log-viewer' => 
   array (
     'providers' => 
