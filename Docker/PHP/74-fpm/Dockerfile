@@ -55,6 +55,10 @@ RUN mkdir -p /var/log/supervisor
 # Copy application files
 COPY . /var/www/html
 
+# Set the correct permissions for the storage and bootstrap/cache directories
+RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
+RUN chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
+
 # Set working directory
 WORKDIR /var/www/html
 
